@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, IdBaseComponent,
-  IdComponent, IdTCPConnection, IdTCPClient, IdHTTP, Clipbrd;
+  IdComponent, IdTCPConnection, IdTCPClient, IdHTTP, Clipbrd, IdAuthentication;
 
 type
   TForm1 = class(TForm)
@@ -20,7 +20,6 @@ type
     procedure UrlLimparClick(Sender: TObject);
     procedure UrlCopiaClick(Sender: TObject);
     procedure UrlLimpaInputClick(Sender: TObject);
-
   private
     { Private declarations }
   public
@@ -33,6 +32,7 @@ var
 implementation
 
 {$R *.dfm}
+
 
 
 
